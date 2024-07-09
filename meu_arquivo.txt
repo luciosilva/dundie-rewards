@@ -1,0 +1,8 @@
+python -m site
+python -m venv .venv
+source .venv/bin/activate
+python -m site
+code --user-data-dir .vscodelocal
+
+
+
