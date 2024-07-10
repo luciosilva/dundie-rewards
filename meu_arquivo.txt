@@ -1,0 +1,26 @@
+python -m site
+python -m venv .venv
+source .venv/bin/activate
+python -m site
+code --user-data-dir .vscodelocal
+echo ".vscodelocal" >> .gitignore
+
+
+git push -u origin HEAD
+
+ctrl + shit + p
+python interpreter
+selecionar o venv
+
+python -m dundie add --to=joao --value=800
+pip install --upgrade pip
+python setup.py build
+tree -L 2 build
+#instalação local e editável
+pip install -e .
+pip list
+git push -u origin HEAD
+
+
+
+
