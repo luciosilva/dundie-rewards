@@ -22,5 +22,13 @@ pip list
 git push -u origin HEAD
 
 
+ls .venv/bin
+#por dundie
+ipython
+from dundie import __main__
+type(__main__)
+callable(__main__)
 
+git stash
+git stash pop
 
