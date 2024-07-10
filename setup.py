@@ -11,5 +11,4 @@ setup(
     author="Lucio Silva",
 #    packages=["dundie"],
     packages=find_packages(),
-
 )

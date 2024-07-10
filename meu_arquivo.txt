@@ -19,5 +19,8 @@ tree -L 2 build
 #instalação local e editável
 pip install -e .
 pip list
+git push -u origin HEAD
+
+
 
 
