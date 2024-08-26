@@ -32,3 +32,39 @@ callable(__main__)
 git stash
 git stash pop
 
+pip install -e '.[dev]'
+pip show ipython
+pip install -e '.[dev]'
+pip install -r requirements.test.txt
+
+--listar módulos
+pip list
+
+--Arquitetura de imports do projeto
+python -m site
+
+--importar o pytest
+pip install -e '.[test]'
+
+doctests
+Dá para colocar em comentários:
+    >>> len(load('assets/people.csv'))
+    2
+
+Ai executamos:
+python -m doctest dundie/core.py
+python -m doctest -v dundie/core.py
+
+Dá para colocar mais de um em comentários:
+    >>> len(load('assets/people.csv'))
+    2
+    >>> len(load('assets/people.csv'))[0][0]
+    'D'
+
+Modo verboso para parar no breakpoint
+pytest -vv -s
+pip install pytest-watch
+
+Executar por marca:
+pytest -s -m "high"
+pytest -s -m "unit and high"
