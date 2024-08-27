@@ -30,6 +30,7 @@ setup(
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Lucio Silva",
+    python_requires=">=3.8",
 #    packages=["dundie"],
     packages=find_packages(),
     entry_points = {
