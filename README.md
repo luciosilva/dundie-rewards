@@ -1,6 +1,6 @@
 # Projeto Dundie Rewards
 
-[![CI](https://github.com/rochacbruno/dundie-rewards/actions/workflows/main.yml/badge.svg)](https://github.com/rochacbruno/dundie-rewards/actions/workflows/main.yml)
+[![CI](https://github.com/luciosilva/dundie-rewards/actions/workflows/main.yaml/badge.svg)](https://github.com/luciosilva/dundie-rewards/actions/workflows/main.yaml)
 
 Nós fomos contratados pela Dunder Mifflin, grande fabricante de papéis para desenvolver um sistema
 de recompensas para seus colaboradores.
