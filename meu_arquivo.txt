@@ -68,3 +68,4 @@ pip install pytest-watch
 Executar por marca:
 pytest -s -m "high"
 pytest -s -m "unit and high"
+pytest -s -m "unit"
