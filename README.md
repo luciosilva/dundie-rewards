@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/luciosilva/dundie-rewards/actions/workflows/main.yaml/badge.svg)](https://github.com/luciosilva/dundie-rewards/actions/workflows/main.yaml)
 
+With Tests
+
 Nós fomos contratados pela Dunder Mifflin, grande fabricante de papéis para desenvolver um sistema
 de recompensas para seus colaboradores.
 
