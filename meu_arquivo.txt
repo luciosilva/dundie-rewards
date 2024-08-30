@@ -72,3 +72,10 @@ pytest -s -m "unit"
 
 Relatório
 pytest -s -m "unit" --junitxml=/tmp/result.xml
+
+
+qulity assurency
+pflake8
+configurado no pyproject
+Linhas que não quero marcar 
+# noqa
