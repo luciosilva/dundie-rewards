@@ -1,1 +1,4 @@
 ipython
+click
+rich
+rich_click
