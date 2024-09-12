@@ -17,8 +17,8 @@
         }
     },
     "balance": {
-        "jim@dundlermifflin.com": 500,
-        "schrute@dundlermifflin.com": 100,
+        "jim@dundlermifflin.com": 800,
+        "schrute@dundlermifflin.com": 400,
         "glewis@dundlermifflin.com": 500
     },
     "movement": {
@@ -27,6 +27,41 @@
                 "date": "2024-09-07T12:36:01.724165",
                 "actor": "system",
                 "value": 500
+            },
+            {
+                "date": "2024-09-12T00:18:34.085416",
+                "actor": "luciosilva",
+                "value": 30
+            },
+            {
+                "date": "2024-09-12T00:19:05.009727",
+                "actor": "luciosilva",
+                "value": 332
+            },
+            {
+                "date": "2024-09-12T00:25:02.811330",
+                "actor": "luciosilva",
+                "value": -62
+            },
+            {
+                "date": "2024-09-12T00:28:01.808487",
+                "actor": "luciosilva",
+                "value": 62
+            },
+            {
+                "date": "2024-09-12T00:28:14.472197",
+                "actor": "luciosilva",
+                "value": -62
+            },
+            {
+                "date": "2024-09-12T00:30:10.887670",
+                "actor": "luciosilva",
+                "value": 62
+            },
+            {
+                "date": "2024-09-12T00:30:14.108458",
+                "actor": "luciosilva",
+                "value": -62
             }
         ],
         "schrute@dundlermifflin.com": [
@@ -34,6 +69,41 @@
                 "date": "2024-09-07T12:36:01.727307",
                 "actor": "system",
                 "value": 100
+            },
+            {
+                "date": "2024-09-12T00:18:34.085465",
+                "actor": "luciosilva",
+                "value": 30
+            },
+            {
+                "date": "2024-09-12T00:19:05.009737",
+                "actor": "luciosilva",
+                "value": 332
+            },
+            {
+                "date": "2024-09-12T00:25:02.811366",
+                "actor": "luciosilva",
+                "value": -62
+            },
+            {
+                "date": "2024-09-12T00:28:01.808496",
+                "actor": "luciosilva",
+                "value": 62
+            },
+            {
+                "date": "2024-09-12T00:28:14.472213",
+                "actor": "luciosilva",
+                "value": -62
+            },
+            {
+                "date": "2024-09-12T00:30:10.887682",
+                "actor": "luciosilva",
+                "value": 62
+            },
+            {
+                "date": "2024-09-12T00:30:14.108485",
+                "actor": "luciosilva",
+                "value": -62
             }
         ],
         "glewis@dundlermifflin.com": [
