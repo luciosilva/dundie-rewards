@@ -1,3 +1,5 @@
+"""Load Tests."""
+
 import pytest
 
 from dundie.core import load

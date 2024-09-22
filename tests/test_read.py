@@ -1,3 +1,5 @@
+"""Read Tests."""
+
 import pytest
 
 from dundie.core import read
@@ -6,6 +8,7 @@ from dundie.database import add_person, commit, connect
 
 @pytest.mark.unit
 def test_read_with_query():
+    """Test read with query."""
     pk = "joe@doe.com"
     data = {"role": "Salesman", "dept": "Sales", "name": "Joe Doe"}
     db = connect()

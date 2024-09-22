@@ -79,3 +79,31 @@ pflake8
 configurado no pyproject
 Linhas que não quero marcar 
 # noqa
+
+
+
+documentação
+mkdocs
+mkdocs new .
+mkdocs serve
+
+mkdocs build --clean
+
+Primeira versão sempre
+0.1.0
+
+pip install -e '.[dev]'
+pip install -e /path/pacote
+
+para empacotar de maneira binária
+pip install wheel
+
+python setup.py sdist bdist_wheel
+
+
+
+pip install twine
+twine upload --repository testpypi dist/*
+
+pip install -i https://test.pypi.org/simple/ luciofdasilva-dundie==0.1.1
+

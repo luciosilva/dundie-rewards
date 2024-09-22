@@ -1,7 +1,10 @@
+"""Tests configuration."""
+
 from functools import wraps
 
 
 def bold(f):
+    """Set bold style."""
     @wraps(f)
     def wrapper(text):
         return f(f"<strong>{text}</strong>")
@@ -10,6 +13,7 @@ def bold(f):
 
 
 def italic(f):
+    """Set italic style."""
     @wraps(f)
     def wrapper(text):
         return f(f"<i>{text}</i>")
@@ -20,6 +24,7 @@ def italic(f):
 @bold
 @italic
 def hello(text):
+    """Hello decorator example."""
     return f"Hello {text}"
 
 

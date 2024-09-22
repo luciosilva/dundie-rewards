@@ -1,3 +1,5 @@
+"""Emails utils."""
+
 import re
 import smtplib
 from email.mime.text import MIMEText
@@ -12,11 +14,12 @@ regex = r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b"
 
 
 def check_valid_email(address):
-    """Return True if email is valid"""
+    """Return True if email is valid."""
     return bool(re.fullmatch(regex, address))
 
 
 def send_email(from_: str, to: List[str], subject: str, text: str):
+    """Send a e-mail."""
     # TODO: Encrypt and send only link not password
     if not isinstance(to, list):
         # raise ValueError("to must be a list")

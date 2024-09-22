@@ -1,12 +1,15 @@
 # setuptools
 # pyproject
 # external build tools (poetry, flit)
+"""Setup for dundie."""
+
 import os
 from setuptools import setup, find_packages
 
 
 def read(*paths):
     """Read the contents of a text file safely.
+
     >>> read("dundie", "VERSION")
     '0.1.0'
     >>> read("README.md")
@@ -18,7 +21,7 @@ def read(*paths):
 
 
 def read_requirements(path):
-    """Return a list of requirements from a text file"""
+    """Return a list of requirements from a text file."""
     return [
         line.strip()
         for line in read(path).split("\n")
@@ -27,15 +30,20 @@ def read_requirements(path):
 
 
 setup(
-    name="dundie",
-    version="0.1.0",
+    name="luciofdasilva-dundie",
+    # Major.Minor.Patch
+    # X.Y.Z
+    version="0.1.1",
     description="Reward Point System for Dunder Mifflin",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     author="Lucio Silva",
     python_requires=">=3.8",
     #    packages=["dundie"],
-    packages=find_packages(),
+    #    packages=find_packages(include=["dundie", "tests"]),
+    packages=find_packages(exclude=["integration"]),
+    include_package_data=True,
+    #    packages=find_packages(exclude=["tests", "integration"]),
     entry_points={"console_scripts": ["dundie = dundie.__main__:main"]},
     install_requires=read_requirements("requirements.txt"),
     extras_require={

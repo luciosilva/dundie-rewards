@@ -1,3 +1,5 @@
+"""CLI definition."""
+
 import json
 
 import pkg_resources
@@ -16,9 +18,12 @@ click.rich_click.APPEND_METAVARS_HELP = True
 
 
 @click.group()
-@click.version_option(pkg_resources.get_distribution("dundie").version)
+@click.version_option(
+    pkg_resources.get_distribution("luciofdasilva-dundie").version
+)
 def main():
-    """Dunder Mifflin Rewards System.
+    """Definition Dunder Mifflin Rewards System.
+
     This cli application controls DM rewards.
     """
 
@@ -26,7 +31,7 @@ def main():
 @main.command()
 @click.argument("filepath", type=click.Path(exists=True))
 def load(filepath):
-    """Loads the file to the database.
+    """Load the file to the database.
 
     ## Features
 
@@ -54,7 +59,7 @@ def load(filepath):
 @click.option("--email", required=False)
 @click.option("--output", default=None)
 def show(output, **query):
-    """Shows information about users"""
+    """Show information about users."""
     result = core.read(**query)
     if output:
         with open(output, "w") as output_file:
@@ -79,7 +84,7 @@ def show(output, **query):
 @click.option("--email", required=False)
 @click.pass_context
 def add(ctx, value, **query):
-    """Add points to the user or dept"""
+    """Add points to the user or dept."""
     core.add(value, **query)
     ctx.invoke(show, **query)
 
@@ -90,6 +95,6 @@ def add(ctx, value, **query):
 @click.option("--email", required=False)
 @click.pass_context
 def remove(ctx, value, **query):
-    """Remove points to the user or dept"""
+    """Remove points to the user or dept."""
     core.add(-value, **query)
     ctx.invoke(show, **query)

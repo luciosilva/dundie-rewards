@@ -1,4 +1,4 @@
-.PHONY: install virtualenv ipython clean test pflake8
+.PHONY: install virtualenv ipython clean test pflake8 docs build
 
 install:
 	@echo "Installing for dev environment"
@@ -29,12 +29,27 @@ clean:				##Clean unused files.
 	@find ./ -name '__pycahe__' -exec rm -f {} \;
 	@find ./ -name 'Thumbs.db' -exec rm -f {} \;
 	@find ./ -name '*~' -exec rm -f {} \;
-	@find -rf .cache
-	@find -rf .pytest_cache
-	@find -rf .mypy_cache
-	@find -rf build
-	@find -rf dist
-	@find -rf *.egg-info
-	@find -rf htmlcov
-	@find -rf .tox/
-	@find -rf docs/_build
+	@rm -rf .cache
+	@rm -rf .pytest_cache
+	@rm -rf .mypy_cache
+	@rm -rf build
+	@rm -rf dist
+	@rm -rf *.egg-info
+	@rm -rf htmlcov
+	@rm -rf .tox/
+	@rm -rf docs/_build
+
+docs:
+	@mkdocs build --clean
+
+docs-serve:
+	@mkdocs serve
+
+build:
+	@python setup.py sdist bdist_wheel
+
+publish-test:
+	@twine upload --repository testpypi dist/*
+
+publish:
+	@twine upload dist/*

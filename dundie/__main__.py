@@ -1,3 +1,5 @@
+"""Public module file."""
+
 # import sys
 # print(sys.argv[1:])
 # import argparse

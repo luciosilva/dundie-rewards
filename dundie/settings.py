@@ -1,3 +1,5 @@
+"""Settings of Dundie project."""
+
 import os
 
 SMTP_HOST: str = "localhost"
